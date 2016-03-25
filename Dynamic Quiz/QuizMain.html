@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Test your Brains</title>
+		<link rel="stylesheet" href="QuizCSS.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="QuizJavaScript.js"></script>
+    </head>   
+	
+        <body onload="myOnLoad()">
+            <div class="title">
+                <p id="title_p1">Test your Brains
+                </p>
+				
+                <p id="title_p2">
+					<span id="subTitle">Subject for Today:</span>
+                    <span id="subject"></span>
+                    <span id="date"></span>
+                </p>
+			</div>
+			
+			<div class="middle" hidden>
+				
+				<div class="progressDiv">
+					<div id="progressBar">
+						<div id="progress">
+						</div>
+					</div>
+					<p id="timer_p">Time Remaining : <span id="timer"></span></p>
+				</div>
+				
+				<div class="score">
+					<div id="scoreDisplay1"><input type="text" id="score_right"><p id="ps1"></p></div>
+					<div id="scoreDisplay2"><input type="text" id="score_wrong"><p id="ps2"></p></div>
+				</div> 
+				
+				<div id="question" >
+				  <form id="formName">	
+					<div id="multiple">
+						
+						<p id="question1">This is multiple question</p>
+						
+						<table id="itemTable">
+							<tr>
+								<td><input type="radio" name="radioName" id="radio1" value="val1"> 
+								    <label for="radio1" id="label1"></label>
+								</td>	
+							</tr>
+							<tr>
+								<td><input type="radio" name="radioName" id="radio2" value="val2"> 
+								    <label for="radio2" id="label2"></label>
+								</td>	
+							</tr>
+							<tr>
+								<td><input type="radio" name="radioName" id="radio3" value="val3"> 
+								    <label for="radio3" id="label3"></label>
+								</td>	
+							</tr>
+							<tr>
+								<td><input type="radio" name="radioName" id="radio4" value="val4"> 
+								    <label for="radio4" id="label4"></label>	
+								</td>	
+							</tr>	
+						</table>
+						
+					</div>
+
+					<div id="oneword">
+						<p id="question2">This is single question</p>
+							<textarea name="textarea" id="area"></textarea>
+					</div> 
+				 </form>
+				</div>
+
+
+				<div class = "control">
+				  <div class="controlStart"><input type="button" id="start" value="Start" onclick="startFromFirst()"></div>
+				  <div class="controlNext"><input type="button" id="next" value="Next" onclick="nextQuestion()"></div>  
+				  <div class="controlQuit"><input type="button" id="quit" value="Quit" onclick="endQuiz()"></div>
+				</div>
+				</div>
+			
+			<div class="instruction">
+				<div id="instruction2">
+					<p id="inst_p">Instructions</p>
+					
+					<ol id="instList">
+						<li>There is a new subject for each day</li>
+						<li>The questions change according to present subject </li>
+						<li>You have 15 min to solve the quiz</li>
+						<li>Use the start button to start the quiz</li>
+						<li>Use the next button to go to next question</li>
+						<li>There are two types of questions in the quiz</li> 
+					</ol>
+					<br>
+					<input type="button" name="button" value="Start" id="startMain" onclick="quizStart()">
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+			
+			<footer>
+				<p id="footer1">All copyrights reserved by Naina Raut</p>
+			</footer>
+        </body>
+</html>
