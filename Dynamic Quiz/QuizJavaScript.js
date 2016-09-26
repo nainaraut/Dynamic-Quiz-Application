@@ -55,18 +55,18 @@
 						endQuiz();
 					}
 					else{
-							if(min<10)
-							{
-								min = "0"+min;
-							}
-							if(sec<10)
-							{
-								sec = "0"+sec;
-							}
-							var result = "00:"+min+":"+sec;
-							document.getElementById("timer").innerHTML = result;
+						if(min<10)
+						{
+							min = "0"+min;
 						}
-					},1000);
+						if(sec<10)
+						{
+							sec = "0"+sec;
+						}
+						var result = "00:"+min+":"+sec;
+						document.getElementById("timer").innerHTML = result;
+					}
+				},1000);
 				
 				nextQuestion();
 			}
@@ -114,10 +114,10 @@
 				$("#multiple").hide();
 
 				if(count >= 10)
-					{
-						count = 0;
-						endQuiz();	
-					}
+				{
+					count = 0;
+					endQuiz();	
+				}
 				else{
 					
 					count++;
@@ -131,14 +131,14 @@
 					
 					if(count > 1)
 					{
-							//update the progress bar
-							progressBar();
+						//update the progress bar
+						progressBar();
 							
-							//update the score
-							updateScore();
+						//update the score
+						updateScore();
 							
-							//reset the form values
-							document.getElementById("formName").reset();
+						//reset the form values
+						document.getElementById("formName").reset();
 					}
 
 					
@@ -372,11 +372,11 @@
 					{
 						//if checked
 						if(inputVal[i].checked)
-							{
-								//store the checked option value
-								checkElement = inputVal[i].value;
-								break;
-							}
+						{
+							//store the checked option value
+							checkElement = inputVal[i].value;
+							break;
+						}
 					}
 					
 					//if the checked option is correct
