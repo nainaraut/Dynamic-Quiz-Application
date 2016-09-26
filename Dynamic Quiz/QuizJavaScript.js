@@ -5,12 +5,11 @@
 			var count = 0;               //variable to count the number of questions attempted
 			var myScore = 0;             //score
 			var d = new Date();
-		    var day = d.getDay();
-
+		        var day = d.getDay();
 
 			//logic to generate the index randomly without repeat
-				var randomArr = [];
-				var maxLength = 10;
+			var randomArr = [];
+			var maxLength = 10;
 			
 			//function called on page load
 			function myOnLoad()
